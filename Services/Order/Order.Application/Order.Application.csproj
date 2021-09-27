@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.1.1" />
+    <PackageReference Include="FluentValidation" Version="10.3.3" />
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="10.3.3" />
+    <PackageReference Include="MassTransit.AspNetCore" Version="7.2.2" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="9.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Shared\Shared\Shared.csproj" />
+    <ProjectReference Include="..\Order.Domain\Order.Domain.csproj" />
+    <ProjectReference Include="..\Order.Instrastructure\Order.Instrastructure.csproj" />
+  </ItemGroup>
+
+</Project>
